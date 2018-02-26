@@ -42,14 +42,14 @@ const timezoneUrl = (lat, lng) => `https://maps.googleapis.com/maps/api/timezone
       // format local date/time using the timeZoneId
       const localTime = moment().tz(timeZoneId).format('MMMM Do YYYY, h:mm:ss a');
       
-      cb(null, { text: `Local time in ${location} is ${localTime}` });
+      cb(null, `Local time in ${location} is ${localTime}`);
     })
     .catch(e => {
       console.error(e);
-      cb(null, { text: `Error retrieving local time` });
+      cb(null, `Error retrieving local time`);
     });
   })
   .catch(e => {
-    cb(null, { text: `Error retrieving local time` });
+    cb(null, `Error retrieving local time`);
   });
 }
