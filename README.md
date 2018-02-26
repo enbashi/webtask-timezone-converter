@@ -22,3 +22,7 @@ wt create https://raw.githubusercontent.com/enbashi/webtask-timezone-converter/m
 ```
 curl https://wt-e603451f3e0378d682110ee5d8c07386-0.run.webtask.io/timezone-converter?location=Bogota
 ```
+
+Slack version
+------
+[Another version](webtask-slack-timezone-converter.md) of this converter can used with Slack.
