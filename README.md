@@ -18,7 +18,8 @@ wt create https://raw.githubusercontent.com/enbashi/webtask-timezone-converter/m
     --parse-body \
     --secret GOOGLE_API_KEY=[KEY_FROM_STEP1]
 ```
-3. Pass a `location` paramter to your unique Webtask URL you get in step 2. For example:
+3. Pass a `location` paramter to your unique Webtask URL you get in step 2. The location can be a full address, city, zipcode, state or country (for countries with one timezone like Nepal or Colombia)
+For example:
 ```
 curl https://wt-e603451f3e0378d682110ee5d8c07386-0.run.webtask.io/timezone-converter?location=Bogota
 ```
