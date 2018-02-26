@@ -7,6 +7,9 @@ module.exports = (ctx, cb) => {
   
 // Request paramter
 const {location} = ctx.data;
+if(!location){
+  cb(null, `Location is not provided`);
+}  
 
 const geocodeUrl = `https://maps.googleapis.com/maps/api/geocode/json?address=${location}&sensor=false&key=${ctx.secrets.GOOGLE_API_KEY}`;
 const timezoneUrl = (lat, lng) => `https://maps.googleapis.com/maps/api/timezone/json?location=${lat},${lng}&timestamp=1331161200&sensor=false&key=${ctx.secrets.GOOGLE_API_KEY}`;
