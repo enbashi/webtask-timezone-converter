@@ -25,4 +25,4 @@ curl https://wt-e603451f3e0378d682110ee5d8c07386-0.run.webtask.io/timezone-conve
 
 Slack version
 ------
-[Another version](webtask-slack-timezone-converter.md) of this converter can used with Slack.
+[Another version](webtask-slack-timezone-converter.md) of this converter can be used with Slack.
